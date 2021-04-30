@@ -1,0 +1,163 @@
+#qodef-page-header {
+  background-color: transparent;
+}
+
+/* Homepage Text Hover Effects */
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title {
+  font-size: 75px;
+  line-height: 1.2;
+}
+
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title:hover {
+  color: #1f1f1f;
+}
+
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title-title {
+  font-size: 75px;
+  line-height: 1;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0;
+  text-decoration: none;
+  color: red;
+  line-height: 1.1;
+}
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title::before {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  color: #0ff;
+  z-index: -1;
+}
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title::after {
+  display: block;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.8;
+  color: #f0f;
+  z-index: -2;
+}
+@keyframes glitch {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-5px, 5px);
+  }
+  40% {
+    transform: translate(-5px, -5px);
+  }
+  60% {
+    transform: translate(5px, 5px);
+  }
+  80% {
+    transform: translate(5px, -5px);
+  }
+  to {
+    transform: translate(0);
+  }
+}
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title:hover::before {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) both infinite;
+}
+.qodef-interactive-link-showcase .qodef-m-item .qodef-e-title:hover::after {
+  animation: glitch 0.3s cubic-bezier(0.25, 0.46, 0.45, 0.94) reverse both
+    infinite;
+}
+
+/* END Homepage Text Hover Effects */
+
+/* Portfolio Images Hover Effects */
+
+.qodef-grid.qodef-layout--masonry.qodef-items--fixed .qodef-grid-item img {
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.qodef-grid.qodef-layout--masonry.qodef-items--fixed
+  .qodef-grid-item
+  img:hover {
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+}
+
+/*Highlighted titles*/
+#highlight-text {
+  text-align: center;
+}
+
+.qodef-h2,
+h2 {
+  text-align: center;
+}
+
+/*Artists Button*/
+
+.qualitymaterials {
+  align-content: right;
+}
+
+/*House Page Hover effects*/
+
+.elementor-widget-heading
+  .elementor-heading-title[class*="elementor-size-"]
+  > a:hover {
+  text-decoration: line-through;
+  color: white;
+}
+
+/*Full Screen Menu*/
+
+#qodef-fullscreen-area {
+  background-color: black;
+}
+
+#qodef-page-footer .widget ul:not(.qodef-shortcode-list) a:hover {
+  color: red;
+}
+
+#qodef-page-footer .widget a:hover {
+  color: red;
+}
+
+/*Portfolio Hover Images Fix*/
+
+.qodef-portfolio-list:not(.qodef-item-layout--switch-images)
+  article:hover
+  .qodef-e-media-image
+  a
+  > img:not(:only-child) {
+  opacity: 1;
+}
+
+.qodef-e-media-image:hover {
+  border: 1px solid black;
+}
+
+/*LNR House Mobile Header*/
+
+#qodef-page-mobile-header {
+  background-color: #1d1919;
+}
+
+button.mfp-close {
+  border: 0px;
+}
+
+.mfp-bottom-bar {
+  display: none;
+}
